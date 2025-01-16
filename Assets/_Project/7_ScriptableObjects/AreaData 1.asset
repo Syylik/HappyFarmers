@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f1831601a3e33c9b104442ade11735, type: 3}
+  m_Name: AreaData 1
+  m_EditorClassIdentifier: 
+  cropData:
+    cropStages:
+    - {fileID: 21300000, guid: 9c64b91b2f5470b90ad626e33954d55b, type: 3}
+    - {fileID: 21300000, guid: ff0fb9edb06121f74a972325c6fdc1d0, type: 3}
+    - {fileID: 21300000, guid: 83ac10c0df72c43e9ab94722437c879c, type: 3}
+    - {fileID: 21300000, guid: 9248a2bce712bd94fb254ffc29d6ab0c, type: 3}
+    cropGrowTime: 2
+    _areaCropSprite: {fileID: 21300000, guid: 48858c68931dcde2e9bb8adaf0833433, type: 3}
+  cropCollectTime: 4
+  areaUpgradeData:
+    _hoesSprites:
+    - {fileID: 21300000, guid: c0f37522fc60f4a9ba939da313ac4ad0, type: 3}
+    - {fileID: 21300000, guid: b1f5b15141d3849f7b2a52d8f364b7de, type: 3}
+    - {fileID: 21300000, guid: 862252e99c81ee7ec9241cbcd696842c, type: 3}
