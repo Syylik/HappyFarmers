@@ -28,10 +28,10 @@ public class WorkerCollectingState : State
         _anim.SetWalkingState(true);
         while(targetCollectable != null && Vector3.Distance(_handlerTransform.position, targetCollectable.transform.position) >= _collectStartRadius)
         {
+            if(targetCollectable == null) _handler.WaitForJob();
             _handler.MoveToTarget(targetCollectable.transform);
             await Task.Yield();
         }
-        if(targetCollectable == null) _handler.WaitForJob();
         _anim.SetCollectingState(true);
         await Task.Delay((int)(_handler.collectTime * 100));
         Collect(targetCollectable);

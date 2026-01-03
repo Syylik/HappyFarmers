@@ -1,0 +1,17 @@
+{
+    "name": "WorkerAssembly",
+    "rootNamespace": "Worker",
+    "references": [
+        "GUID:735bbcbd112bc19a299aea89aa772c51",
+        "GUID:822165b1f16384a0fabaa13cbd38de8d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

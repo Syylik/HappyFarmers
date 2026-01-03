@@ -26,6 +26,8 @@ public class Worker : MonoBehaviour
     
     public bool isBusy { get; private set; }
 
+    [SerializeField] private float hihihi;
+
     [Zenject.Inject]
     public void Construct(AreaData areaData, WorkerManager workersManager)
     {

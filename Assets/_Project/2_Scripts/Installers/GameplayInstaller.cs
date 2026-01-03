@@ -11,7 +11,7 @@ public class GameplayInstaller : MonoInstaller
         Container.Bind<AreaCropData>().FromInstance(_currentAreaData.cropData).AsSingle();
         Container.Bind<AreaUpgradeData>().FromInstance(_currentAreaData.areaUpgradeData).AsSingle();
 
-        Container.Bind<WorkerManager>().FromNew().AsSingle();
-        Container.BindInterfacesAndSelfTo<WorkerManager>().AsSingle();
+        WorkerManager workerManager = new WorkerManager();
+        Container.BindInterfacesAndSelfTo<WorkerManager>().FromInstance(workerManager).AsSingle();
     }
 }

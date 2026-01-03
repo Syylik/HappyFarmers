@@ -1,0 +1,18 @@
+{
+    "name": "CropAssembly",
+    "rootNamespace": "Crop",
+    "references": [
+        "GUID:735bbcbd112bc19a299aea89aa772c51",
+        "GUID:822165b1f16384a0fabaa13cbd38de8d",
+        "GUID:34e3bcafe07f751e8807990ef247e8e1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
