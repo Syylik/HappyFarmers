@@ -25,14 +25,15 @@ public class WorkerCollectingState : State
 
     private async void GoAndCollect(ICollectable targetCollectable)
     {
-        _anim.SetWalkingState(true);
+        _anim?.SetWalkingState(true);
+        if(targetCollectable == null) return;
         while(targetCollectable != null && Vector3.Distance(_handlerTransform.position, targetCollectable.transform.position) >= _collectStartRadius)
         {
             if(targetCollectable == null) _handler.WaitForJob();
             _handler.MoveToTarget(targetCollectable.transform);
             await Task.Yield();
         }
-        _anim.SetCollectingState(true);
+        _anim?.SetCollectingState(true);
         await Task.Delay((int)(_handler.collectTime * 100));
         Collect(targetCollectable);
     }
@@ -45,6 +46,6 @@ public class WorkerCollectingState : State
 
     public override void Exit() 
     {
-        _anim.SetCollectingState(false);
+        _anim?.SetCollectingState(false);
     }
 }
